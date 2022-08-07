@@ -1,0 +1,623 @@
+---
+title: ANSWER - Admin
+layout: ./app/layout.ejs
+engine: ejs
+select: Admin
+---
+
+<main class="col-span-4">
+  <header class="flex justify-between p-8 font-bold mb-4">
+    <div class="flex items-center gap-[3.125rem]">
+      <h1 class="text-2xl">Admin</h1>
+      <button
+        type="button"
+        class="relative flex items-center gap-2 cursor-pointer transition duration-300 hover:text-primary group"
+        data-toggle="createAdminButton"
+      >
+        <span
+          class="material-icons ml-2 text-primary transition duration-300 group-hover:text-primary-dark"
+        >
+          add
+        </span>
+        Add New Admin
+      </button>
+    </div>
+    <div class="flex justify-end gap-6">
+      <a href="#">
+        <span class="material-icons transition duration-300 hover:text-primary"> search </span>
+      </a>
+      <a href="#">
+        <span class="material-icons transition duration-300 hover:text-primary">
+          notifications_active
+        </span>
+      </a>
+    </div>
+  </header>
+  <div class="pl-8 pr-6 pb-8">
+    <table class="w-full mb-16">
+      <thead class="border-b border-gray-900">
+        <tr>
+          <td class="flex items-center gap-2 cursor-pointer">
+            ID<span class="material-icons text-primary text-xs leading-none"> arrow_downward </span>
+          </td>
+          <td>Name</td>
+          <td>Email</td>
+          <td>Verified</td>
+          <td></td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="border-b border-gray-400 h-14 hover:bg-gray-200">
+          <th class="font-normal text-left">#1</th>
+          <td>Emir Wicks</td>
+          <td>emir.wicks@mail.com</td>
+          <td>Yes</td>
+          <td>
+            <div class="flex justify-end gap-6">
+              <button
+                type="button"
+                class="hover:text-primary transition duration-300"
+                data-toggle="openUserModalButton"
+              >
+                <span class="material-icons">visibility</span>
+              </button>
+              <button
+                type="button"
+                class="hover:text-primary transition duration-300"
+                data-toggle="editAdminButton"
+              >
+                <span class="material-icons">edit</span>
+              </button>
+            </div>
+          </td>
+        </tr>
+        <tr class="border-b border-gray-400 h-14 hover:bg-gray-200">
+          <th class="font-normal text-left">#2</th>
+          <td>Zaina Goldsmith</td>
+          <td>zaina.goldsmith@mail.com</td>
+          <td>Yes</td>
+          <td>
+            <div class="flex justify-end gap-6">
+              <button
+                type="button"
+                class="hover:text-primary transition duration-300"
+                data-toggle="openUserModalButton"
+              >
+                <span class="material-icons">visibility</span>
+              </button>
+              <button
+                type="button"
+                class="hover:text-primary transition duration-300"
+                data-toggle="editAdminButton"
+              >
+                <span class="material-icons">edit</span>
+              </button>
+            </div>
+          </td>
+        </tr>
+        <tr class="border-b border-gray-400 h-14 hover:bg-gray-200">
+          <th class="font-normal text-left">#3</th>
+          <td>Mahima Lopez</td>
+          <td>mahima.lopez@mail.com</td>
+          <td>Yes</td>
+          <td>
+            <div class="flex justify-end gap-6">
+              <button
+                type="button"
+                class="hover:text-primary transition duration-300"
+                data-toggle="openUserModalButton"
+              >
+                <span class="material-icons">visibility</span>
+              </button>
+              <button
+                type="button"
+                class="hover:text-primary transition duration-300"
+                data-toggle="editAdminButton"
+              >
+                <span class="material-icons">edit</span>
+              </button>
+            </div>
+          </td>
+        </tr>
+        <tr class="border-b border-gray-400 h-14 hover:bg-gray-200">
+          <th class="font-normal text-left">#4</th>
+          <td>Pharrell Murray</td>
+          <td>pharrell.murray@mail.com</td>
+          <td>Yes</td>
+          <td>
+            <div class="flex justify-end gap-6">
+              <button
+                type="button"
+                class="hover:text-primary transition duration-300"
+                data-toggle="openUserModalButton"
+              >
+                <span class="material-icons">visibility</span>
+              </button>
+              <button
+                type="button"
+                class="hover:text-primary transition duration-300"
+                data-toggle="editAdminButton"
+              >
+                <span class="material-icons">edit</span>
+              </button>
+            </div>
+          </td>
+        </tr>
+        <tr class="border-b border-gray-400 h-14 hover:bg-gray-200">
+          <th class="font-normal text-left">#5</th>
+          <td>Annika Mcbride</td>
+          <td>annika.mcbride@mail.com</td>
+          <td>Yes</td>
+          <td>
+            <div class="flex justify-end gap-6">
+              <button
+                type="button"
+                class="hover:text-primary transition duration-300"
+                data-toggle="openUserModalButton"
+              >
+                <span class="material-icons">visibility</span>
+              </button>
+              <button
+                type="button"
+                class="hover:text-primary transition duration-300"
+                data-toggle="editAdminButton"
+              >
+                <span class="material-icons">edit</span>
+              </button>
+            </div>
+          </td>
+        </tr>
+        <tr class="border-b border-gray-400 h-14 hover:bg-gray-200">
+          <th class="font-normal text-left">#6</th>
+          <td>Fatimah Clark</td>
+          <td>fatimah.clark@mail.com</td>
+          <td>Yes</td>
+          <td>
+            <div class="flex justify-end gap-6">
+              <button
+                type="button"
+                class="hover:text-primary transition duration-300"
+                data-toggle="openUserModalButton"
+              >
+                <span class="material-icons">visibility</span>
+              </button>
+              <button
+                type="button"
+                class="hover:text-primary transition duration-300"
+                data-toggle="editAdminButton"
+              >
+                <span class="material-icons">edit</span>
+              </button>
+            </div>
+          </td>
+        </tr>
+        <tr class="border-b border-gray-400 h-14 hover:bg-gray-200">
+          <th class="font-normal text-left">#7</th>
+          <td>Klaudia Rhodes</td>
+          <td>klaudia.rhodes@mail.com</td>
+          <td>Yes</td>
+          <td>
+            <div class="flex justify-end gap-6">
+              <button
+                type="button"
+                class="hover:text-primary transition duration-300"
+                data-toggle="openUserModalButton"
+              >
+                <span class="material-icons">visibility</span>
+              </button>
+              <button
+                type="button"
+                class="hover:text-primary transition duration-300"
+                data-toggle="editAdminButton"
+              >
+                <span class="material-icons">edit</span>
+              </button>
+            </div>
+          </td>
+        </tr>
+        <tr class="border-b border-gray-400 h-14 hover:bg-gray-200">
+          <th class="font-normal text-left">#8</th>
+          <td>Tillie Lucero</td>
+          <td>tillie.lucero@mail.com</td>
+          <td>Yes</td>
+          <td>
+            <div class="flex justify-end gap-6">
+              <button
+                type="button"
+                class="hover:text-primary transition duration-300"
+                data-toggle="openUserModalButton"
+              >
+                <span class="material-icons">visibility</span>
+              </button>
+              <button
+                type="button"
+                class="hover:text-primary transition duration-300"
+                data-toggle="editAdminButton"
+              >
+                <span class="material-icons">edit</span>
+              </button>
+            </div>
+          </td>
+        </tr>
+        <tr class="border-b border-gray-400 h-14 hover:bg-gray-200">
+          <th class="font-normal text-left">#9</th>
+          <td>Sabrina Stephenson</td>
+          <td>sabrina.stephenson@mail.com</td>
+          <td>Yes</td>
+          <td>
+            <div class="flex justify-end gap-6">
+              <button
+                type="button"
+                class="hover:text-primary transition duration-300"
+                data-toggle="openUserModalButton"
+              >
+                <span class="material-icons">visibility</span>
+              </button>
+              <button
+                type="button"
+                class="hover:text-primary transition duration-300"
+                data-toggle="editAdminButton"
+              >
+                <span class="material-icons">edit</span>
+              </button>
+            </div>
+          </td>
+        </tr>
+        <tr class="border-b border-gray-400 h-14 hover:bg-gray-200">
+          <th class="font-normal text-left">#10</th>
+          <td>Annie Smith</td>
+          <td>annie.smith@mail.com</td>
+          <td>Yes</td>
+          <td>
+            <div class="flex justify-end gap-6">
+              <button
+                type="button"
+                class="hover:text-primary transition duration-300"
+                data-toggle="openUserModalButton"
+              >
+                <span class="material-icons">visibility</span>
+              </button>
+              <button
+                type="button"
+                class="hover:text-primary transition duration-300"
+                data-toggle="editAdminButton"
+              >
+                <span class="material-icons">edit</span>
+              </button>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="flex justify-end">
+      <nav class="inline-flex rounded-sm border border-primary">
+        <button
+          type="button"
+          class="grid place-content-center pointer-events-none text-primary p-1 opacity-25 bg-primary-light"
+        >
+          <span class="material-icons">keyboard_arrow_left</span>
+        </button>
+        <a
+          href="#"
+          class="grid place-content-center bg-primary text-white h-8 w-8 pointer-events-none"
+          >1</a
+        >
+        <a
+          href="#"
+          class="grid place-content-center text-gray-900 h-8 w-8 transition duration-300 hover:text-primary"
+          >2</a
+        >
+        <a
+          href="#"
+          class="grid place-content-center text-gray-900 h-8 w-8 transition duration-300 hover:text-primary"
+          >3</a
+        >
+        <button
+          type="button"
+          class="grid place-content-center text-primary p-1 transition duration-300 hover:bg-primary hover:text-white"
+        >
+          <span class="material-icons">keyboard_arrow_right</span>
+        </button>
+      </nav>
+    </div>
+  </div>
+</main>
+
+<div
+  class="absolute hidden top-0 left-0 w-full h-full bg-gray-900 bg-opacity-50 transition-all duration-300"
+  role="dialog"
+  data-target="modalContainer"
+>
+  <div class="flex justify-center items-center h-full" data-target="backdrop">
+    <div class="p-8 bg-white min-w-[30rem] hidden" data-target="userView">
+      <div class="flex gap-6">
+        <img
+          src="https://images.unsplash.com/photo-1522069394066-326005dc26b2?ixlib=rb-1.2.1&ixid=eyjhchbfawqiojeymdd9&auto=format&fit=crop&w=1350&q=80"
+          class="rounded-sm w-[8.8125rem] h-[8.8125rem] object-cover"
+          alt=""
+        />
+        <div class="w-full">
+          <div class="flex justify-between items-center">
+            <span>#1</span>
+            <button
+              type="button"
+              class="h-6 hover:text-primary transition duration-300"
+              data-toggle="closeUserModalButton"
+            >
+              <span class="material-icons"> close </span>
+            </button>
+          </div>
+          <h2>Admin</h2>
+          <h1 class="text-2xl font-bold mb-2">Emir Wicks</h1>
+          <p class="text-sm text-gray-600 mb-4">emir.wicks@mail.com</p>
+          <div class="flex justify-between items-center w-ful">
+            <span class="py-1 px-2 text-sm bg-gray-100"> Verified </span>
+            <button
+              type="button"
+              class="h-6 transition-all duration-300 rotate-180"
+              data-toggle="userModalActionButton"
+            >
+              <span class="material-icons text-primary"> expand_less </span>
+            </button>
+          </div>
+          <div class="hidden w-full pt-8" data-target="userModalActivity">
+            <button
+              type="button"
+              class="text-red border border-red py-2 px-8 transition duration-300 mr-4 hover:bg-red hover:text-white"
+            >
+              Deactivate
+            </button>
+            <button
+              type="button"
+              class="bg-primary text-white py-2 px-8 transition duration-300 hover:bg-primary-dark"
+            >
+              Edit
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section
+      class="hidden relative rounded-sm bg-white border border-gray-400 w-[30rem] h-full overflow-auto"
+      data-target="createAdminModal"
+    >
+      <div class="p-8">
+        <form action="">
+          <div class="flex justify-between items-center w-full mb-8">
+            <h1 class="text-2xl font-bold">New Admin</h1>
+            <button
+              type="button"
+              class="h-6 hover:text-primary transition duration-300"
+              data-toggle="closeCreateAdminModalButton"
+            >
+              <span class="material-icons"> close </span>
+            </button>
+          </div>
+          <div class="border-b border-gray-400 space-y-4 pb-6 mb-6">
+            <h2 class="text-xl font-bold mb-4">Account</h2>
+            <div class="space-y-1">
+              <label for="cerateUserName" class="block">Name</label>
+              <input
+                type="text"
+                id="cerateUserName"
+                name="cerateUserName"
+                class="w-full rounded-sm"
+              />
+            </div>
+            <div class="space-y-1">
+              <label for="createUserEmail" class="block">Email</label>
+              <input
+                type="email"
+                id="createUserEmail"
+                name="createUserEmail"
+                class="w-full rounded-sm"
+              />
+            </div>
+          </div>
+          <div class="border-b border-gray-400 space-y-4 pb-6 mb-6">
+            <h2 class="text-xl font-bold mb-4">Verification</h2>
+            <p class="text-xl flex gap-2 items-center">
+              <span class="material-icons text-2xl leading-none text-red"> warning </span>
+              Unverified
+            </p>
+            <button
+              type="button"
+              class="w-full rounded-sm border border-gray-400 text-center text-primary font-bold py-4"
+            >
+              Send Verification Mail
+            </button>
+          </div>
+          <div class="border-b border-gray-400 space-y-4 pb-6 mb-6">
+            <h2 class="text-xl font-bold mb-4">Access Level</h2>
+            <div
+              class="relative flex justify-between items-center p-4 rounded-sm border border-gray-900 cursor-pointer"
+            >
+              <span>-Choose access level-</span>
+              <button
+                type="button"
+                class="h-6 transition-all duration-300 rotate-180"
+                data-toggle="createAdminAccessLevelButton"
+              >
+                <span class="material-icons"> expand_less </span>
+              </button>
+            </div>
+          </div>
+          <div class="border-b border-gray-400 space-y-4 pb-6 mb-6">
+            <h2 class="text-xl font-bold mb-4">Custom Access</h2>
+            <div class="flex flex-col gap-4">
+              <label for="Lecture">
+                <input type="checkbox" name="Lecture" id="Lecture" />
+                Lecture
+              </label>
+              <label for="Coupon">
+                <input type="checkbox" name="Coupon" id="Coupon" />
+                Coupon
+              </label>
+              <label for="Message">
+                <input type="checkbox" name="Message" id="Message" />
+                Message
+              </label>
+              <label for="Setting">
+                <input type="checkbox" name="Setting" id="Setting" />
+                Setting
+              </label>
+              <label for="TaskMenu">
+                <input type="checkbox" name="TaskMenu" id="TaskMenu" />
+                Task Menu
+              </label>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div
+        class="fixed bottom-0 border-t bortder-gray-400 pt-4 px-8 pb-4 flex justify-end bg-white w-[30rem]"
+      >
+        <button
+          type="button"
+          class="text-primary border border-primary py-2 px-8 transition duration-300 mr-4 hover:bg-primary hover:text-white"
+          data-toggle="closeCreateAdminModalButton"
+        >
+          Cancel
+        </button>
+        <button
+          type="button"
+          class="bg-primary text-white py-2 px-8 transition duration-300 hover:bg-primary-dark"
+          data-toggle="closeCreateAdminModalButton"
+        >
+          Add
+        </button>
+      </div>
+    </section>
+    <section
+      class="hidden relative rounded-sm bg-white border border-gray-400 w-[30rem] h-full overflow-auto"
+      data-target="editAdminModal"
+    >
+      <div class="p-8">
+        <form action="">
+          <div class="flex justify-between items-center w-full mb-8">
+            <h1 class="text-2xl font-bold">Edit Admin</h1>
+            <button
+              type="button"
+              class="h-6 hover:text-primary transition duration-300"
+              data-toggle="closeCreateAdminModalButton"
+            >
+              <span class="material-icons"> close </span>
+            </button>
+          </div>
+          <div class="border-b border-gray-400 space-y-4 pb-6 mb-6">
+            <h2 class="text-xl font-bold mb-4">Account</h2>
+            <div class="space-y-1">
+              <label for="editUserName" class="block">Name</label>
+              <input
+                type="text"
+                id="editUserName"
+                name="editUserName"
+                value="Emir Wicks"
+                class="w-full rounded-sm border-0 bg-gray-100 p-4"
+              />
+            </div>
+            <div class="space-y-1">
+              <label for="editUserEmail" class="block">Email</label>
+              <input
+                type="email"
+                id="editUserEmail"
+                name="editUserEmail"
+                value="emir.wicks@mail.com"
+                class="w-full rounded-sm border-0 bg-gray-100 p-4"
+              />
+            </div>
+          </div>
+          <div class="border-b border-gray-400 space-y-4 pb-6 mb-6">
+            <h2 class="text-xl font-bold mb-4">Verification</h2>
+            <div class="flex justify-between items-center w-full">
+              <p class="text-xl flex gap-2 items-center">
+                <span class="material-icons text-2xl leading-none text-primary">
+                  check_circle
+                </span>
+                Verified
+              </p>
+              <span class="text-sm"> 2020/4/12 </span>
+            </div>
+            <button
+              type="button"
+              class="w-full rounded-sm border border-gray-400 text-center text-gray-400 font-bold py-4 cursor-default"
+            >
+              Send Verification Mail
+            </button>
+          </div>
+          <div class="border-b border-gray-400 space-y-4 pb-6 mb-6">
+            <h2 class="text-xl font-bold mb-4">Access Level</h2>
+            <div
+              class="relative flex justify-between items-center p-4 rounded-sm border border-gray-900 cursor-pointer"
+            >
+              <span>Admin</span>
+              <button
+                type="button"
+                class="h-6 transition-all duration-300 rotate-180"
+                data-toggle="createAdminAccessLevelButton"
+              >
+                <span class="material-icons"> expand_less </span>
+              </button>
+            </div>
+          </div>
+          <div class="border-b border-gray-400 space-y-4 pb-6 mb-6">
+            <h2 class="text-xl font-bold mb-4">Custom Access</h2>
+            <div class="flex flex-col gap-4">
+              <label for="Lecture">
+                <input type="checkbox" name="Lecture" id="Lecture" />
+                Lecture
+              </label>
+              <label for="Coupon">
+                <input type="checkbox" name="Coupon" id="Coupon" />
+                Coupon
+              </label>
+              <label for="Message">
+                <input type="checkbox" name="Message" id="Message" />
+                Message
+              </label>
+              <label for="Setting">
+                <input type="checkbox" name="Setting" id="Setting" />
+                Setting
+              </label>
+              <label for="TaskMenu">
+                <input type="checkbox" name="TaskMenu" id="TaskMenu" />
+                Task Menu
+              </label>
+            </div>
+          </div>
+          <div class="border-b border-gray-400 space-y-4 pb-6 mb-6">
+            <h2 class="text-xl font-bold mb-4">Deactivate Account</h2>
+            <p class="text-xl flex gap-2 items-center">
+              <span class="material-icons text-2xl leading-none text-red"> warning </span>
+              This cannot be undone!
+            </p>
+            <button
+              type="button"
+              class="w-full rounded-sm border border-red text-center text-red font-bold py-4 cursor-default"
+            >
+              Deactivate This Account
+            </button>
+          </div>
+        </form>
+      </div>
+      <div
+        class="fixed bottom-0 border-t bortder-gray-400 pt-4 px-8 pb-4 flex justify-end bg-white w-[30rem]"
+      >
+        <button
+          type="button"
+          class="text-primary border border-primary py-2 px-8 transition duration-300 mr-4 hover:bg-primary hover:text-white"
+          data-toggle="closeCreateAdminModalButton"
+        >
+          Cancel
+        </button>
+        <button
+          type="button"
+          class="bg-primary text-white py-2 px-8 transition duration-300 hover:bg-primary-dark"
+          data-toggle="closeCreateAdminModalButton"
+        >
+          Add
+        </button>
+      </div>
+    </section>
+  </div>
+</div>

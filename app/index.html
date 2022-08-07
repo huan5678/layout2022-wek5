@@ -1,0 +1,236 @@
+---
+title: ANSWER - Assignment
+layout: ./app/layout.ejs
+engine: ejs
+select: Assignment
+---
+
+<style>
+  .ck-editor__editable[role='textbox'] {
+    min-height: 17rem;
+  }
+  .ck.ck-toolbar {
+  }
+  .ck.ck-toolbar .ck-button {
+    padding: 0.75rem 1rem;
+  }
+</style>
+
+<main class="col-span-4">
+  <header class="flex justify-between p-8 font-bold mb-3">
+    <div class="flex items-center gap-[3.125rem]">
+      <h1 class="text-2xl">Assignment</h1>
+      <p class="relative flex items-center gap-2 cursor-pointer">
+        All Courses
+        <span class="material-icons ml-2 text-primary"> expand_more </span>
+      </p>
+    </div>
+    <div class="flex gap-6">
+      <a href="#">
+        <span class="material-icons"> search </span>
+      </a>
+      <a href="#">
+        <span class="material-icons"> notifications_active </span>
+      </a>
+    </div>
+  </header>
+  <div class="flex justify-between items-center px-8">
+    <div class="flex gap-2 mb-1 cursor-pointer">
+      <span>ALL(4)</span>
+      <span class="material-icons text-primary"> expand_more </span>
+    </div>
+    <span class="text-gray-600 text-xs"> 2 comments </span>
+  </div>
+  <section class="flex gap-4 px-8">
+    <aside class="max-w-[20rem] w-full">
+      <ul class="flex flex-col rounded-sm border border-gray-400 divide-y divide-gray-400">
+        <li class="bg-gray-100 p-3 cursor-pointer">
+          <div class="flex justify-between">
+            <div class="space-y-1">
+              <p class="text-xs">Chapter Assignment 2</p>
+              <h3 class="font-bold">Please check this file…</h3>
+            </div>
+            <div class="space-y-2">
+              <p class="text-xs">4hrs ago</p>
+              <h4 class="text-gray-600 text-xs">Emily Wang</h4>
+            </div>
+          </div>
+        </li>
+        <li class="p-3 cursor-pointer hover:bg-primary-light transition duration-300">
+          <div class="flex justify-between">
+            <div class="space-y-1">
+              <p class="text-xs">Chapter Assignment 1</p>
+              <h3 class="font-bold">My Homework</h3>
+            </div>
+            <div class="space-y-2">
+              <p class="text-xs">12hrs ago</p>
+              <h4 class="text-gray-600 text-xs">David Xu</h4>
+            </div>
+          </div>
+        </li>
+        <li class="p-3 cursor-pointer hover:bg-primary-light transition duration-300">
+          <div class="flex justify-between">
+            <div class="space-y-1">
+              <p class="text-xs">Final Assignment</p>
+              <h3 class="font-bold">Have a problem with this…</h3>
+            </div>
+            <div class="space-y-2">
+              <p class="text-xs">18hrs ago</p>
+              <h4 class="text-gray-600 text-xs">Tony Wei</h4>
+            </div>
+          </div>
+        </li>
+        <li class="p-3 cursor-pointer hover:bg-primary-light transition duration-300">
+          <div class="flex justify-between">
+            <div class="space-y-1">
+              <p class="text-xs">Final Assignment</p>
+              <h3 class="font-bold">Did I do it right?</h3>
+            </div>
+            <div class="space-y-2">
+              <p class="text-xs">19hrs ago</p>
+              <h4 class="text-gray-600 text-xs">Christina Lin</h4>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </aside>
+    <div class="w-full relative">
+      <div class="rounded-sm border border-gray-400 mb-4">
+        <div class="bg-gray-100 flex justify-between items-center py-3 px-4">
+          <div class="space-y-1">
+            <span class="text-xs">Chapter Assignment 2 / HTML&CSS</span>
+            <h2 class="font-bold">Please check this file for me, thanks!</h2>
+          </div>
+          <button type="button" class="hover:text-primary transition duration-300">
+            <span class="material-icons"> more_vert </span>
+          </button>
+        </div>
+        <article>
+          <div class="flex gap-2 p-4">
+            <img
+              src="https://images.unsplash.com/photo-1504051771394-dd2e66b2e08f?ixlib=rb-1.2.1&ixid=eyjhchbfawqiojeymdd9&auto=format&fit=crop&w=2134&q=80"
+              class="w-10 h-10 object-cover rounded-full"
+              alt="Emily Wang"
+            />
+            <div class="space-y-1">
+              <h2 class="font-bold">Emily Wang</h2>
+              <span class="text-gray-600 text-xs">10:38 AM (4 hours ago)</span>
+            </div>
+          </div>
+          <div class="pl-16 pr-8">
+            <div class="border-b border-gray-400">
+              <p class="mb-4">
+                Hi Teacher, the attached file is my homework of chapter 2. And here comes a
+                question: Why in the following code the height of the
+                <code class="rounded-sm bg-gray-100 text-primary font-mono">div</code> is bigger
+                than the height of the
+                <code class="rounded-sm bg-gray-100 text-primary font-mono">img</code> ? There is a
+                gap below the image, but it doesn’t seems to be a padding/margin. What is the gap or
+                extra space below image?
+              </p>
+              <button
+                type="button"
+                class="flex justify-center gap-2 font-bold rounded-sm border border-gray-400 bg-gray-100 py-2 px-3 mb-4 transition duration-300 hover:border-primary hover:text-primary"
+              >
+                <span class="material-icons"> attach_file </span>
+                HW-2-David.zip
+              </button>
+            </div>
+          </div>
+        </article>
+        <article>
+          <div class="flex justify-between items-start p-4">
+            <div class="flex gap-2">
+              <img
+                src="https://images.unsplash.com/photo-1514794749374-fb67509dbb7f?ixlib=rb-1.2.1&ixid=eyjhchbfawqiojeymdd9&auto=format&fit=crop&w=2000&q=80"
+                class="w-10 h-10 object-cover rounded-full"
+                alt="Andy Chen"
+              />
+              <div class="space-y-1">
+                <h2 class="font-bold">Andy Chen (You)</h2>
+                <span class="text-gray-600 text-xs">13:24 AM (1 hours ago)</span>
+              </div>
+            </div>
+            <div class="flex gap-6">
+              <button type="button" class="hover:text-primary transition duration-300">
+                <span class="material-icons"> star_border </span>
+              </button>
+              <button type="button" class="hover:text-primary transition duration-300">
+                <span class="material-icons"> edit </span>
+              </button>
+            </div>
+          </div>
+          <div class="pl-16 pr-8">
+            <div class="mb-4">
+              <p class="mb-4">
+                Hi David, by default, an image is rendered inline, like a letter so it sits on the
+                same line that a, b, c and d sit on. There is space below that line for the
+                descenders you find on letters like g, j, p and q.
+                <br />
+                <br />
+                You can:
+              </p>
+              <ul class="list-disc">
+                <li>
+                  adjust the
+                  <code class="rounded-sm bg-gray-100 text-primary font-mono">vertical-align</code>
+                  of the image to position it elsewhere (e.g. the is bigger than the height of the
+                  <code class="rounded-sm bg-gray-100 text-primary font-mono">middle</code> ) or
+                </li>
+                <li>
+                  change the
+                  <code class="rounded-sm bg-gray-100 text-primary font-mono">display</code> so it
+                  isn't inline.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="flex justify-between item-center">
+        <div class="flex justify-between item-center gap-6">
+          <span class="material-icons cursor-pointer p-2"> navigate_before </span>
+          <span class="material-icons cursor-pointer p-2"> navigate_next </span>
+        </div>
+        <div class="flex justify-between item-center gap-4">
+          <button
+            type="button"
+            class="rounded-sm border border-primary py-2 px-8 text-primary hover:bg-primary hover:text-white transition duration-300"
+          >
+            Mark as read
+          </button>
+          <button
+            data-toggle="accessBtn"
+            type="button"
+            class="rounded-sm bg-primary text-white py-2 px-8 transition duration-300 hover:bg-primary-dark"
+          >
+            Reply
+          </button>
+        </div>
+      </div>
+      <div class="absolute bottom-0 w-full hidden" id="editorContainer">
+        <div class="relative">
+          <div id="editor"></div>
+          <div
+            class="flex flex-row gap-2 justify-end absolute bottom-0 right-0 -translate-x-[1.5rem] -translate-y-[1rem]"
+          >
+            <button
+              data-toggle="accessBtn"
+              type="button"
+              class="rounded-sm border border-primary py-2 px-8 text-primary hover:bg-primary hover:text-white transition duration-300"
+            >
+              Cancel
+            </button>
+            <button
+              data-toggle="accessBtn"
+              type="button"
+              class="rounded-sm bg-primary text-white py-2 px-8 transition duration-300 hover:bg-primary-dark"
+            >
+              Reply
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
