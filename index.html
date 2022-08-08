@@ -1,10 +1,74 @@
----
-title: ANSWER - Assignment
-layout: ./app/layout.ejs
-engine: ejs
-select: Assignment
----
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>ANSWER - Assignment</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round|Material+Icons+Sharp"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/style/all.css" />
+  </head>
 
+  <body>
+    <div class="grid grid-cols-5">
+      <aside class="flex flex-col bg-gray-100 h-screen py-8 min-w-[18.5rem] col-span-1">
+        <h2 class="p-8 pb-5">
+          <a
+            href="./"
+            class="block w-[151px] h-10 bg-center bg-no-repeat bg-contain indent-[101%] overflow-hidden whitespace-nowrap"
+            style="background-image: url('./assets/images/logo-ANSWER.svg')"
+          >
+            ANSWER
+          </a>
+        </h2>
+        <nav class="flex flex-col font-bold">
+          <a
+            href="#"
+            class="relative py-3 px-8 flex items-center gap-4 hover:bg-primary hover:text-white transition duration-300"
+            ><span class="material-icons"> assessment </span> Dashboard</a
+          >
+          <a
+            href="#"
+            class="relative py-3 px-8 flex items-center gap-4 hover:bg-primary hover:text-white transition duration-300"
+            ><span class="material-icons"> forum </span> Question</a
+          >
+          <a
+            href="./index.html"
+            class="relative py-3 px-8 flex items-center gap-4 before:absolute before:left-0 before:h-full before:w-1 before:bg-primary text-primary cursor-default pointer-events-none"
+            ><span class="material-icons"> assignment </span> Assignment</a
+          >
+          <a
+            href="#"
+            class="relative py-3 px-8 flex items-center gap-4 hover:bg-primary hover:text-white transition duration-300"
+            ><span class="material-icons"> video_library </span> Course</a
+          >
+          <a
+            href="./admin.html"
+            class="relative py-3 px-8 flex items-center gap-4 hover:bg-primary hover:text-white transition duration-300"
+            ><span class="material-icons"> people </span> Admin</a
+          >
+          <a
+            href="#"
+            class="relative py-3 px-8 flex items-center gap-4 hover:bg-primary hover:text-white transition duration-300"
+            ><span class="material-icons"> settings </span> Settings</a
+          >
+        </nav>
+        <div class="flex px-8 gap-4 items-center mt-auto cursor-pointer">
+          <img
+            src="https://images.unsplash.com/photo-1514794749374-fb67509dbb7f?ixlib=rb-1.2.1&ixid=eyjhchbfawqiojeymdd9&auto=format&fit=crop&w=2000&q=80"
+            alt="userAvatar"
+            class="w-10 h-10 object-cover rounded-full"
+          />
+          <div class="space-y-1">
+            <h2 id="userName" class="font-bold">Andy Chen</h2>
+            <p id="userEmail" class="text-gray-600">andy0401@mail.com</p>
+          </div>
+        </div>
+      </aside>
+      
 <style>
   .ck-editor__editable[role='textbox'] {
     min-height: 17rem;
@@ -238,3 +302,10 @@ select: Assignment
     </div>
   </section>
 </main>
+
+    </div>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/35.0.1/classic/ckeditor.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+</html>
