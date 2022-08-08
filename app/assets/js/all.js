@@ -1,7 +1,7 @@
-const editor = $('#editor');
+const editor = document.querySelector('#editor');
 editor && ClassicEditor.create(editor);
 
-$('[data-toggle="accessBtn"]').on('click', () => $('#editorContainer').toggle(300));
+$('[data-toggle="accessBtn"]').on('click', () => $('[data-target="editorContainer"]').toggle(300));
 
 $('[data-toggle="userModalActionButton"]').on('click', () => {
   return (

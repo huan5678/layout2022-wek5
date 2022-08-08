@@ -27,10 +27,12 @@ select: Assignment
     </div>
     <div class="flex gap-6">
       <a href="#">
-        <span class="material-icons"> search </span>
+        <span class="material-icons transition duration-300 hover:text-primary"> search </span>
       </a>
       <a href="#">
-        <span class="material-icons"> notifications_active </span>
+        <span class="material-icons transition duration-300 hover:text-primary">
+          notifications_active
+        </span>
       </a>
     </div>
   </header>
@@ -189,8 +191,10 @@ select: Assignment
       </div>
       <div class="flex justify-between item-center">
         <div class="flex justify-between item-center gap-6">
-          <span class="material-icons cursor-pointer p-2"> navigate_before </span>
-          <span class="material-icons cursor-pointer p-2"> navigate_next </span>
+          <span class="material-icons cursor-pointer p-2 hover:text-primary">
+            navigate_before
+          </span>
+          <span class="material-icons cursor-pointer p-2 hover:text-primary"> navigate_next </span>
         </div>
         <div class="flex justify-between item-center gap-4">
           <button
@@ -208,8 +212,8 @@ select: Assignment
           </button>
         </div>
       </div>
-      <div class="absolute bottom-0 w-full hidden" id="editorContainer">
-        <div class="relative">
+      <div class="absolute bottom-0 w-full hidden" data-target="editorContainer">
+        <div class="relative bg-white">
           <div id="editor"></div>
           <div
             class="flex flex-row gap-2 justify-end absolute bottom-0 right-0 -translate-x-[1.5rem] -translate-y-[1rem]"
